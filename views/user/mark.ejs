@@ -1,0 +1,38 @@
+<%- include("../includes/start.ejs") %>
+    <link rel="stylesheet" href="/css/mark.css">
+    <script src="/js/mark.js" defer></script>
+   <script  src="\js\particles.js"></script>
+            <script src="\js\app.js"></script>
+    </head>
+
+    <body>
+        <div id="particles-js">
+        </div>
+            
+        <div class="container">
+            <div class="form-container">
+                <div class="form__container-header">
+                    <div>Lab Attendance</div>
+                </div>
+                <form class="attendance-form" name="attendance-form" onsubmit="return false">
+                    <div class="form__input-container">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="sub" onclick="handleSubmit()">Submit</button>
+                    
+                </form>
+                <div class="form__container-footer">
+                    <!-- <p>Go to your <a href="/">Dashboard</a></p> -->
+                    <a href="/"><button type="submit" class="dash">Go To Dashboard</button></a>
+                </div>
+            </div>
+            <div class="response-container" id="response-container"></div>
+        </div>
+        <script  src="\js\particles.js"></script>
+        <script src="\js\app.js"></script>
+        
+    
+    </body>
+
+    </html>

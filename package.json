@@ -1,0 +1,30 @@
+{
+  "name": "bdcoe-ims",
+  "version": "1.0.0",
+  "description": "Big Data Centre of Excellence Internal Management System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon -r dotenv/config app.js",
+    "local": "node -r dotenv/config app.js"
+  },
+  "keywords": [
+    "bdcoe",
+    "ims",
+    "management",
+    "attendence",
+    "lab"
+  ],
+  "author": "prateek",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.0"
+  }
+}

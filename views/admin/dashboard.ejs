@@ -1,0 +1,71 @@
+<%- include("../includes/start.ejs") %>
+    <link rel="stylesheet" href="/css/admindashboard.css">
+    <script src="/js/adminDashboard.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/assets/bdcoe.png" alt="bdcoe" height="45px">
+                <p>Big Data Centre of Excellence</p>
+            </div>
+            <nav>
+
+            </nav>
+            <div class="logout">
+                <form action="/admin/api/v1/logout" method="GET">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
+        </header>
+        <div class="container">
+            <div class="data">
+                <div class="info">
+                    <p><b>Lab Attendance</b></p>
+                    <div class="query">
+                        <div class="by-date">
+                            <form name="date-search" onsubmit="return false">
+                                <input type="date" name="date" id="date">
+                                <button type="submit" onclick="dateQuery()">Search</button>
+                            </form>
+                        </div>
+                        <!-- <div class="by-name">
+                            <input type="text" name="username" id="username" placeholder="username">
+                            <button type="button" onclick="nameQuery()">Search</button>
+                        </div> -->
+                        <div class="download-btn">
+                            <button type="button" onclick="download()">Dowload</button>
+                        </div>                        
+                    </div>
+                    <div class="stats">
+                        <div id="data-date"><b>Date:</b> dd-mm-yyyy</div>
+                        <div id="strength"><b>Strength:</b> 0</div>
+                        <div id="duration"><b>Duration:</b> 0h:0m</div>
+                    </div>
+                </div>
+                <div class="table">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Name</th>
+                                <th>Student No.</th>
+                                <th>Branch</th>
+                                <th>Year</th>
+                                <th>Entry</th>
+                                <th>Exit</th>
+                                <th>Duration</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2022 | Big Data Centre of Excellence - All Rights Reserved</p>
+        </footer>
+    </body>
+
+    </html>

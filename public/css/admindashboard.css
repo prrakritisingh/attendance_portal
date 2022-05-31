@@ -1,0 +1,143 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    box-shadow: var(--shadow);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    background-color: #ffffff;
+    box-shadow: var(--shadow);
+}
+
+footer p {
+    margin: 0 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.logo img {
+    margin-right: 0.5rem;
+}
+
+.logout {
+    margin: 0 1rem;
+}
+
+.logout button {
+    font-size: 0.9rem;
+    color: red;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border: thin solid red;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.logout button:hover {
+    color: #ffffff;
+    background-color: red;
+    border: thin solid red;
+}
+
+.container {
+    display: flex;
+    height: 85vh;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    padding: 1rem 1.5rem;
+    margin-top: 15px;
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+}
+
+.download-btn {
+    margin: 0 25px;
+}
+
+.query {
+    display: flex;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats div {
+    margin: 0 10px;
+}
+
+.table {
+    width: 98%;
+    max-height: 32rem;
+    overflow-y: scroll;
+    overflow-x: auto;
+    margin: 15px 0;
+    box-shadow: var(--shadow);
+}
+
+.table::-webkit-scrollbar {
+    width: 5px;
+    background-color: #dddddd;
+}
+.table::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: var(--primary);
+}
+
+/* table styles */
+
+.data-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.data-table thead tr {
+    background-color: var(--primary);
+    color: #ffffff;
+    text-align: left;
+}
+
+.data-table th {
+    padding: 15px;
+}
+.data-table td {
+    padding: 12px 15px;
+}
+
+.data-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.data-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.data-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary);
+}

@@ -1,0 +1,23 @@
+<%- include("../includes/start.ejs") %>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/login.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <div class="form__container-header">
+                    <div>Admin Login</div>
+                </div>
+                <form class="login-form" name="admin-login" onsubmit="return false">
+                    <div class="form__input-container">
+                        <input type="text" name="username" placeholder="username">
+                        <input type="password" name="password" placeholder="password">
+                    </div>
+                    <button type="submit" onclick="handleSubmit()">Login</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    </html>

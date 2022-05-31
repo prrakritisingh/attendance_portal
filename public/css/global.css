@@ -1,0 +1,12 @@
+:root {
+    --primary: #0f33ff;
+    --shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    --shadow-sec: 0 0 8px 1px #ebebeb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
